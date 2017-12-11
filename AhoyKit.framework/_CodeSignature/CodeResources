@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/AhoyApiManager.h</key>
 		<data>
-		2rMRWJhV9B1vIzmb2JhgPJp1kH8=
+		2OE7HDywk6JnsHbRtT+VdgAkmrk=
 		</data>
 		<key>Headers/AhoyCallViewController.h</key>
 		<data>
@@ -86,7 +86,7 @@
 		</data>
 		<key>Headers/AhoySDK.h</key>
 		<data>
-		LbQEWy9vmmKN4DjXydf8JXLNjuI=
+		Uo97WalZI+L0JWRluz0hAVpzaLA=
 		</data>
 		<key>Headers/AhoySDK.pch</key>
 		<data>
@@ -98,7 +98,7 @@
 		</data>
 		<key>Headers/AhoySessionDelegateProtocol.h</key>
 		<data>
-		L50a2v9PkFAfhJNgA1h4hoUG+3k=
+		f6R34yfE3aK1KVk+as+y/o73F6U=
 		</data>
 		<key>Headers/AhoySipCall.h</key>
 		<data>
@@ -245,11 +245,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			2rMRWJhV9B1vIzmb2JhgPJp1kH8=
+			2OE7HDywk6JnsHbRtT+VdgAkmrk=
 			</data>
 			<key>hash2</key>
 			<data>
-			KXyOQy9HVDErUwneeJxa5D4vkI3Pq3r8yf6LKX6q1RI=
+			ZBx670A0JFwIu4+7z015AiSq5PPHSoCTxtYk7J2GA/0=
 			</data>
 		</dict>
 		<key>Headers/AhoyCallViewController.h</key>
@@ -465,11 +465,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			LbQEWy9vmmKN4DjXydf8JXLNjuI=
+			Uo97WalZI+L0JWRluz0hAVpzaLA=
 			</data>
 			<key>hash2</key>
 			<data>
-			uUvW5TBr4O6p6MkJ0feT9Dmc168ChxkO13f3R8H2caY=
+			Xio8vdQYMSYiDo1DkPdRBkAE+D7njC5GgJf6zdAQhOY=
 			</data>
 		</dict>
 		<key>Headers/AhoySDK.pch</key>
@@ -498,11 +498,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			L50a2v9PkFAfhJNgA1h4hoUG+3k=
+			f6R34yfE3aK1KVk+as+y/o73F6U=
 			</data>
 			<key>hash2</key>
 			<data>
-			hKot3gzyDyquyIKeXdPWALqykIeOLZdHCKCvT8JACl8=
+			KfvQIdj7ck6SLIThKUsiHUvOzs0aDXRhdCr5ag2vyW8=
 			</data>
 		</dict>
 		<key>Headers/AhoySipCall.h</key>

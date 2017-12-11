@@ -60,7 +60,7 @@
 - (void)getContactInfo:(NSString *)contactUuid withCallback:(void (^)(BOOL, NSDictionary *))callback;
 - (AhoySession *)callContact:(NSDictionary *)contact withAudio:(BOOL)enableAudio andVideo:(BOOL)enableVideo connectionTimeout:(int)connectionTimeout callTimeout:(int)callTimeout withCallback:(void (^)(BOOL, NSDictionary *))callback;
 - (AhoySession *)callAddress:(NSString *)address withAudio:(BOOL)enableAudio andVideo:(BOOL)enableVideo metaData:(NSDictionary *)metaData connectionTimeout:(int)connectionTimeout callTimeout:(int)callTimeout withCallback:(void (^)(BOOL, NSDictionary *))callback;
-- (AhoySession *)callSip:(NSString *)address withAudio:(BOOL)enableAudio andVideo:(BOOL)enableVideo sip:(NSDictionary *)sip metaData:(NSDictionary *)metaData connectionTimeout:(int)connectionTimeout callTimeout:(int)callTimeout withCallback:(void (^)(BOOL, NSDictionary *))callback;
+- (AhoySession *)callSip:(NSString *)address withAudio:(BOOL)enableAudio andVideo:(BOOL)enableVideo sip:(NSDictionary *)sip metaData:(NSDictionary *)metaData connectionTimeout:(int)connectionTimeout callTimeout:(int)callTimeout;
 
 - (void)answerIncomingCall:(NSString *)uuid withAudio:(BOOL)enableAudio andVideo:(BOOL)enableVideo  callback:(void(^)(BOOL, NSDictionary *))callback;
 - (void)rejectIncomingCall:(NSString *)uuid withReason:(NSString *)reason;

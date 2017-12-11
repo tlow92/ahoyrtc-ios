@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import "AhoySipCall.h"
+#import "AhoySession.h"
 
 @interface AhoySDK : NSObject
 
@@ -65,6 +66,7 @@ typedef NS_ENUM(NSInteger, AhoyCallEvent) {
 - (void)callAddress:(NSString *)address withAudio:(BOOL)enableAudio andVideo:(BOOL)enableVideo metaData:(NSDictionary *)metaData presentingViewController:(UIViewController *)viewController viewControllerName:(NSString *)viewControllerName connectionTimeout:(int) connectionTimeout callTimeout:(int) callTimeout callback:(void(^)(BOOL, NSDictionary *))callback;
 - (void)callSip:(NSString *)address withAudio:(BOOL)enableAudio andVideo:(BOOL)enableVideo sip:(NSDictionary *)sip metaData:(NSDictionary *)metaData presentingViewController:(UIViewController *)viewController viewControllerName:(NSString *)viewControllerName callback:(void(^)(BOOL, NSDictionary *))callback;
 - (void)callSip:(NSString *)address withAudio:(BOOL)enableAudio andVideo:(BOOL)enableVideo sip:(NSDictionary *)sip metaData:(NSDictionary *)metaData presentingViewController:(UIViewController *)viewController viewControllerName:(NSString *)viewControllerName connectionTimeout:(int) connectionTimeout callTimeout:(int) callTimeout callback:(void(^)(BOOL, NSDictionary *))callback;
+- (void)callSip:(NSString *)address withAudio:(BOOL)enableAudio andVideo:(BOOL)enableVideo sip:(NSDictionary *)sip metaData:(NSDictionary *)metaData connectionTimeout:(int)connectionTimeout callTimeout:(int)callTimeout callback:(void(^)(AhoySession *, NSDictionary *))callback;
 
 - (void)callContact:(NSDictionary *)contact withAudio:(BOOL)enableAudio andVideo:(BOOL)enableVideo connectionTimeout:(int)connectionTimeout callTimeout:(int) callTimeout callback:(void(^)(BOOL, NSDictionary *))callback;
 - (void)callContactByUuid:(NSString *)uuid withAudio:(BOOL)enableAudio andVideo:(BOOL)enableVideo presentingViewController:(UIViewController *)viewController connectionTimeout:(int)connectionTimeout callTimeout:(int)callTimeout callback:(void(^)(BOOL, NSDictionary *))callback;
