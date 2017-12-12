@@ -6,7 +6,7 @@
 //  Copyright (c) 2015 Junghanns Communications GmbH. All rights reserved.
 //
 
-#import <foundation/Foundation.h>
+#import <Foundation/Foundation.h>
 #import <WebRTC/WebRTC.h>
 #import "AhoyMediaLayerDelegateProtocol.h"
 #import "AhoySessionDelegateProtocol.h"
