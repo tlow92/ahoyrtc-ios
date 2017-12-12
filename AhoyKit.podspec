@@ -5,8 +5,7 @@ Pod::Spec.new do |s|
   s.summary      = "AhoyKit Framework for iOS."
 
   s.description  = <<-DESC
-                   Bulding WebRTC for iOS and adding it to an xcode project is no fun.
-                   Just add this cocoa pod to your Podfile and be happy. :)
+                   AhoyKit and WebRTC frameworks for iOS built for device and simultator architecturs.
                    DESC
 
   s.homepage     = "https://www.ahoyrtc.com"
