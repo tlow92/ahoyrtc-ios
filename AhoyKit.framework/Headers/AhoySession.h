@@ -88,6 +88,8 @@
 - (void)setMicrophoneMuted:(BOOL)muted;
 - (void)terminate;
 - (void)hangup;
+- (void)sendDtmf:(nonnull NSString *)tones withDuration:(NSTimeInterval)duration andInterToneGap:(NSTimeInterval)interToneGap;
+- (void)sendDtmf:(nonnull NSString *)tones;
 
 @end
 
