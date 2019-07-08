@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ahoyrtc-ios"
-  s.version      = "1.23"
+  s.version      = "1.24"
   s.summary      = "AhoyKit Framework for iOS."
 
   s.description  = <<-DESC
