@@ -15,14 +15,14 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <WebRTC/WebRTC.h>
+#import <AhoyWebRTC/AhoyWebRTC.h>
 #import <AVFoundation/AVFoundation.h>
 #import "AhoySDK.h"
 #import "AhoySession.h"
 #import "AhoyImageButton.h"
 #import "AhoyImageSwitch.h"
 
-@interface AhoyCallViewController : UIViewController <AhoySessionDelegateProtocol, RTCEAGLVideoViewDelegate, AhoyImageButtonDelegateProtocol, AhoyImageSwitchDelegateProtocol>
+@interface AhoyCallViewController : UIViewController <AhoySessionDelegateProtocol, RTC_OBJC_TYPE(RTCVideoViewDelegate), AhoyImageButtonDelegateProtocol, AhoyImageSwitchDelegateProtocol>
 
 
 - (id)initWithSession:(AhoySession *)session callback:(void(^)(BOOL, NSDictionary *))callback;

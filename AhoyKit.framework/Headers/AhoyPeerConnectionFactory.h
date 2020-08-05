@@ -7,14 +7,15 @@
 //
 
 #import <AVFoundation/AVFoundation.h>
-#import <WebRTC/WebRTC.h>
+#import <AhoyWebRTC/AhoyWebRTC.h>
 #import "AhoySDK.h"
+#import "AhoyCameraCapturer.h"
 
 
 @interface AhoyPeerConnectionFactory : NSObject
 
 @property (strong, nonatomic) RTCPeerConnectionFactory *factory;
-@property (strong, nonatomic) RTCAVFoundationVideoSource *localVideoSource;
+@property (strong, nonatomic) AhoyCameraCapturer *cameraCapturer;
 @property (nonatomic) BOOL isUsingBackCamera;
 
 + (id)sharedInstance;
@@ -25,7 +26,7 @@
 + (NSString *)processSdp:(NSString *)origSDP preferredVideoCodec:(NSString *)codec;
 - (RTCPeerConnection *)createPeerConnectionWithAudio:(BOOL) audio andVideo:(BOOL)video andStunUri:(NSString *)stunUri andDelegate:(id<RTCPeerConnectionDelegate>)delegate;
 - (RTCPeerConnection *)createPeerConnectionWithAudio:(BOOL) audio andVideo:(BOOL)video andTurn:(NSDictionary *)turn andDelegate:(id<RTCPeerConnectionDelegate>)delegate;
-- (RTCMediaStream *)addLocalMediaToPeerConnection:(RTCPeerConnection *)peerConnection audio:(BOOL)audio video:(BOOL)video  cameraPosition:(AVCaptureDevicePosition) position noiseReduction:(BOOL) enableNoiseReduction hdVideo: (BOOL) enableHdVideo forConferencing:(BOOL)forConferencing;
+- (RTCMediaStream *)addLocalMediaToPeerConnection:(RTCPeerConnection *)peerConnection audio:(BOOL)audio video:(BOOL)video  cameraPosition:(AVCaptureDevicePosition) position noiseReduction:(BOOL) enableNoiseReduction hdVideo: (BOOL) enableHdVideo;
 - (void)muteAudioStream:(RTCMediaStream *)mediaStream;
 - (void)unmuteAudioStream:(RTCMediaStream *)mediaStream;
 - (void)muteVideoStream:(RTCMediaStream *)mediaStream;

@@ -20,11 +20,14 @@
 - (void)sessionDidFail:(AhoySession *)call;
 
 @optional
-- (void)sessionDidGetLocalMediaStream:(RTCMediaStream *) stream;
-- (void)sessionDidGetRemoteMediaStream:(RTCMediaStream *) stream;
-- (void)sessionDidNotGetLocalMediaStream;
+- (void)sessionDidGetLocalMediaStream:(AhoySession *)call withMediaStream:(RTC_OBJC_TYPE(RTCMediaStream) *) stream;
+- (void)sessionDidNotGetLocalMediaStream:(AhoySession *)call withError:(NSString *) error;
 
-- (void)sessionIsProgressing:(AhoySession *)call progress:(NSDictionary *)information;
+- (void)sessionDidGetRemoteMediaStream:(AhoySession *)call withMediaStream:(RTC_OBJC_TYPE(RTCMediaStream) *) stream;
+- (void)sessionDidChangeRemoteMediaStatus:(AhoySession *)call withAudio:(BOOL)audioActive withVideo:(BOOL)videoActive;
+
+- (void)sessionIsProgressing:(AhoySession *)call withInformation:(NSDictionary *)information;
+- (void)sessionDidGetHandledElsewhere:(AhoySession *)call;
 - (void)sessionDidEstablishMediaLayer:(AhoySession *)call;
 - (void)sessionDidDisconnectMediaLayer:(AhoySession *)call;
 - (void)sessionDidFailToEstablishMediaLayer:(AhoySession *)call;

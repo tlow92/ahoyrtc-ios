@@ -7,7 +7,7 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <WebRTC/WebRTC.h>
+#import <AhoyWebRTC/AhoyWebRTC.h>
 #import "AhoySessionDelegateProtocol.h"
 
 @interface AhoySession : NSObject <RTCPeerConnectionDelegate>

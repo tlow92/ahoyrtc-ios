@@ -1,0 +1,6 @@
+framework module AhoyWebRTC {
+  umbrella header "AhoyWebRTC.h"
+
+  export *
+  module * { export * }
+}
