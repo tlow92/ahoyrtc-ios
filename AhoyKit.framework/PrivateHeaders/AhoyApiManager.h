@@ -63,10 +63,6 @@
 - (void)answerIncomingCall:(NSString *)uuid withAudio:(BOOL)enableAudio andVideo:(BOOL)enableVideo  callback:(void(^)(BOOL, NSDictionary *))callback;
 - (void)rejectIncomingCall:(NSString *)uuid withReason:(NSString *)reason;
 - (void)sessionDidGetHungUp:(AhoySession *)session;
-- (void)getConferenceListWithCallback:(void (^)(BOOL, NSDictionary *))callback;
-- (void)getConferenceInfo:(NSString *)uuid callback:(void (^)(BOOL, NSDictionary *))callback;
-- (void)getConferenceInvitation:(NSString *)conferenceUuid callback:(void (^)(BOOL, NSDictionary *))callback;
-- (void)findConference:(NSString *)conferenceUuid withCallback:(void (^)(BOOL, NSDictionary *))callback;
 - (void)sendMessage:(NSDictionary *)message to:(NSString *)address callback:(void (^)(BOOL, NSDictionary *))callback;
 
 - (void)enablePushKit;

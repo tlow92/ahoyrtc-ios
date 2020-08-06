@@ -27,6 +27,7 @@
 - (RTCPeerConnection *)createPeerConnectionWithAudio:(BOOL) audio andVideo:(BOOL)video andStunUri:(NSString *)stunUri andDelegate:(id<RTCPeerConnectionDelegate>)delegate;
 - (RTCPeerConnection *)createPeerConnectionWithAudio:(BOOL) audio andVideo:(BOOL)video andTurn:(NSDictionary *)turn andDelegate:(id<RTCPeerConnectionDelegate>)delegate;
 - (RTCMediaStream *)addLocalMediaToPeerConnection:(RTCPeerConnection *)peerConnection audio:(BOOL)audio video:(BOOL)video  cameraPosition:(AVCaptureDevicePosition) position noiseReduction:(BOOL) enableNoiseReduction hdVideo: (BOOL) enableHdVideo;
+- (void)stopLocalMediaCapture;
 - (void)muteAudioStream:(RTCMediaStream *)mediaStream;
 - (void)unmuteAudioStream:(RTCMediaStream *)mediaStream;
 - (void)muteVideoStream:(RTCMediaStream *)mediaStream;
