@@ -51,6 +51,10 @@ NS_EXTENSION_UNAVAILABLE_IOS("Camera not available in app extensions.")
 // Stops the capture session asynchronously.
 - (void)stopCapture;
 
+- (BOOL)isTorchEnabled;
+- (void)enableTorch;
+- (void)disableTorch;
+
 @end
 
 NS_ASSUME_NONNULL_END

@@ -20,7 +20,7 @@ Pod::Spec.new do |s|
 
   s.source       = { :git => "https://github.com/ahoyconference/ahoyrtc-ios.git", :tag => 'v2.0' }
 
-  s.public_header_files = "WebRTC.framework/Headers/**/*.h", "AhoyKit.framework/Headers/**/*.h"
-  s.vendored_frameworks = "WebRTC.framework", "AhoyKit.framework"
+  s.public_header_files = "AhoyWebRTC.framework/Headers/**/*.h", "AhoyKit.framework/Headers/**/*.h"
+  s.vendored_frameworks = "AhoyWebRTC.framework", "AhoyKit.framework"
 
 end

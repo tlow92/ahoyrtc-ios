@@ -18,5 +18,8 @@
 - (void)startCapture;
 - (void)stopCapture;
 - (BOOL)switchCamera;
+- (void)enableTorch;
+- (void)disableTorch;
+- (BOOL)isTorchEnabled;
 
 @end
