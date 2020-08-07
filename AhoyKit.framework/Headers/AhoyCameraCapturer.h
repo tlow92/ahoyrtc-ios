@@ -13,8 +13,9 @@
 // Controls the camera. Handles starting the capture, switching cameras etc.
 @interface AhoyCameraCapturer : NSObject
 
-- (instancetype)initWithCapturer:(RTC_OBJC_TYPE(RTCCameraVideoCapturer) *)capturer
-                        useFrontCamera:(BOOL)useFrontCamera;
+- (instancetype)initWithCapturer:(RTC_OBJC_TYPE(RTCCameraVideoCapturer) *)capturer useFrontCamera:(BOOL)useFrontCamera;
+- (instancetype)initWithCapturer:(RTC_OBJC_TYPE(RTCCameraVideoCapturer) *)capturer useFrontCamera:(BOOL)useFrontCamera width:(int)width height:(int)height;
+
 - (void)startCapture;
 - (void)stopCapture;
 - (BOOL)switchCamera;

@@ -30,7 +30,7 @@
 @property (nonatomic) BOOL isHdVideoEnabled;
 @property (nonatomic) BOOL isNoiseReductionEnabled;
 @property (nonatomic) BOOL isTrickleIceEnabled;
-@property (nonatomic, strong, nullable) UILocalNotification *localNotification;
+@property (nonatomic, strong, nullable) UILocalNotification *localNotification API_DEPRECATED("Use UserNotifications Framework's UNNotificationRequest", ios(4.0, 10.0));
 @property (nonatomic, strong, nullable) UIAlertController *alertController;
 
 @property (nonatomic, strong, nullable) RTCPeerConnection *peerConnection;
@@ -77,7 +77,7 @@
 
 - (void)answerWithAudio:(BOOL)enableAudio andVideo:(BOOL)enableVideo callback:(nullable void(^)(BOOL, NSDictionary * _Nullable))callback;
 - (void)answerIncomingSessionWithAudio:(BOOL) enableAudio andVideo:(BOOL) enableVideo;
-- (void)setVideoOptionsWithCaptureDevicePosition:(AVCaptureDevicePosition)captureDevicePosition hdVideo:(BOOL)enableHdVideo noiseReduction:(BOOL)enableNoiseReduction preferredCodec:(NSString *)codec bitrate:(NSNumber *)bitrate;
+- (void)setVideoOptionsWithCaptureDevicePosition:(AVCaptureDevicePosition)captureDevicePosition hdVideo:(BOOL)enableHdVideo noiseReduction:(BOOL)enableNoiseReduction preferredCodec:(nullable NSString *)codec bitrate:(nullable NSNumber *)bitrate;
 - (void)startOutgoingSession;
 - (void)rejectWithStatus:(int)status andReason:(nullable NSString *)reason;
 
