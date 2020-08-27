@@ -16,7 +16,7 @@ FOUNDATION_EXPORT const unsigned char AhoyKitVersionString[];
 
 // In this header, you should import all the public headers of your framework using statements like #import <AhoyKit/PublicHeader.h>
 
-#import <AhoyWebRTC/AhoyWebRTC.h>
+#import <WebRTC/AhoyWebRTC.h>
 #import <AhoyKit/AhoySDK.h>
 #import <AhoyKit/AhoyImageButton.h>
 #import <AhoyKit/AhoyImageSwitch.h>

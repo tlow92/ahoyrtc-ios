@@ -9,9 +9,9 @@
 #ifndef AhoyVideoView_h
 #define AhoyVideoView_h
 
-#import <AhoyWebRTC/RTCEAGLVideoView.h>
+#import <WebRTC/RTCEAGLVideoView.h>
 #if defined(RTC_SUPPORTS_METAL)
-#import <AhoyWebRTC/RTCMTLVideoView.h>
+#import <WebRTC/RTCMTLVideoView.h>
 #endif
 
 #if defined(RTC_SUPPORTS_METAL)

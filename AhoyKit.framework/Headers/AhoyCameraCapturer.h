@@ -8,7 +8,7 @@
  *  be found in the AUTHORS file in the root of the source tree.
  */
 
-#import <AhoyWebRTC/RTCCameraVideoCapturer.h>
+#import <WebRTC/RTCCameraVideoCapturer.h>
 
 // Controls the camera. Handles starting the capture, switching cameras etc.
 @interface AhoyCameraCapturer : NSObject

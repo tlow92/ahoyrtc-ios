@@ -7,7 +7,7 @@
 //
 
 #import <AVFoundation/AVFoundation.h>
-#import <AhoyWebRTC/AhoyWebRTC.h>
+#import <WebRTC/AhoyWebRTC.h>
 #import "AhoySDK.h"
 #import "AhoyCameraCapturer.h"
 

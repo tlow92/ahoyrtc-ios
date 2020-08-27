@@ -1,7 +1,7 @@
 Pod::Spec.new do |s|
 
   s.name         = "ahoyrtc-ios"
-  s.version      = "2.0"
+  s.version      = "2.1"
   s.summary      = "AhoyKit Framework for iOS."
 
   s.description  = <<-DESC
@@ -18,7 +18,7 @@ Pod::Spec.new do |s|
 
   s.platform     = :ios, "8.0"
 
-  s.source       = { :git => "https://github.com/ahoyconference/ahoyrtc-ios.git", :tag => 'v2.0' }
+  s.source       = { :git => "https://github.com/tlow92/ahoyrtc-ios", :tag => 'v2.1' }
 
   s.public_header_files = "AhoyWebRTC.framework/Headers/**/*.h", "AhoyKit.framework/Headers/**/*.h"
   s.vendored_frameworks = "AhoyWebRTC.framework", "AhoyKit.framework"

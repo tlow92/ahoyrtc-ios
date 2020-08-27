@@ -15,7 +15,7 @@
 //
 
 #import <UIKit/UIKit.h>
-#import <AhoyWebRTC/AhoyWebRTC.h>
+#import <WebRTC/AhoyWebRTC.h>
 #import <AVFoundation/AVFoundation.h>
 #import "AhoySDK.h"
 #import "AhoySession.h"

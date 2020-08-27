@@ -12,7 +12,7 @@
 #import <foundation/Foundation.h>
 #import <UIKit/UIApplication.h>
 #import <PushKit/PushKit.h>
-#import <AhoyWebRTC/AhoyWebRTC.h>
+#import <WebRTC/AhoyWebRTC.h>
 #import "SocketRocket/SRWebSocket.h"
 #import "AhoyPeerConnectionFactory.h"
 #import "AhoySession.h"
